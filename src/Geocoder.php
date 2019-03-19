@@ -69,7 +69,7 @@ class Geocoder
         ]);
         $components = [];
         try {
-            $response = $this->client->get($url);
+            $response = $this->getClient()->get($url);
             $response = json_decode($response->getBody()->getContents());
             if ($response->status === 'OK' && is_array($response->results)) {
                 $components = $this->getAddressComponents($response->results);
