@@ -14,15 +14,7 @@ class GeocoderServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/geocoder.php', 'geocoder');
-    }
 
-    /**
-     * Register the singleton
-     *
-     * @return void
-     */
-    public function boot()
-    {
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/geocoder.php' => config_path('geocoder.php')
