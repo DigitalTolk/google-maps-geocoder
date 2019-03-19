@@ -1,0 +1,29 @@
+{
+    "name": "jestillore/google-maps-geocoder",
+    "description": "Google Maps Geocoder",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "illuminate/support": "^5.8",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jillberth Estillore",
+            "email": "ejillberth@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jestillore\\GoogleMapsGeocoder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jestillore\\GoogleMapsGeocoder\\GeocoderServiceProvider"
+            ]
+        }
+    }
+}
