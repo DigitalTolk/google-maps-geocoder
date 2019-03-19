@@ -85,15 +85,18 @@ class Geocoder
     /**
      * Get component from response
      *
-     * @param string $type
+     * @param string|array $types
      * @param string $form
      * @return string|null
      */
-    public function getComponent($type, $form = 'long_name')
+    public function getComponent($types, $form = 'long_name')
     {
+        if (is_string($types)) {
+            $types = [$types];
+        }
         foreach ($this->components as $component) {
-            foreach ($component->types as $_type) {
-                if ($type === $_type) {
+            foreach ($component->types as $type) {
+                if (in_array($type, $types)) {
                     return $component->$form;
                 }
             }
