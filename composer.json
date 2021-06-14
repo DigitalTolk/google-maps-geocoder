@@ -1,5 +1,5 @@
 {
-    "name": "jestillore/google-maps-geocoder",
+    "name": "digitaltolk/google-maps-geocoder",
     "description": "Google Maps Geocoder",
     "type": "library",
     "require": {
@@ -16,13 +16,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Jestillore\\GoogleMapsGeocoder\\": "src/"
+            "DigitalTolk\\GoogleMapsGeocoder\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Jestillore\\GoogleMapsGeocoder\\GeocoderServiceProvider"
+                "DigitalTolk\\GoogleMapsGeocoder\\GeocoderServiceProvider"
             ]
         }
     }

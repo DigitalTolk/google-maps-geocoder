@@ -1,6 +1,6 @@
 <?php
 
-namespace Jestillore\GoogleMapsGeocoder;
+namespace DigitalTolk\GoogleMapsGeocoder;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jestillore\GoogleMapsGeocoder;
+namespace DigitalTolk\GoogleMapsGeocoder;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Collection;
